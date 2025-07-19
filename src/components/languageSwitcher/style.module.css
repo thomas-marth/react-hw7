@@ -1,0 +1,9 @@
+.switchBtn {
+  padding: 8px 16px;
+  border: 2px solid #5c5cff;
+  border-radius: 24px;
+  background: white;
+  color: #5c5cff;
+  font-weight: bold;
+  cursor: pointer;
+}
