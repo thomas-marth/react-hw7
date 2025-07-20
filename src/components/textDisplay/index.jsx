@@ -1,4 +1,4 @@
-import { useContext } from "react"; // 1. Импортируем useContext
+import { useContext } from "react";
 import LanguageContext from "../../contexts/LanguageContext";
 import styles from "./style.module.css";
 
