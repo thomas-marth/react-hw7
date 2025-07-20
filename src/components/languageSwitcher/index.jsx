@@ -1,16 +1,15 @@
-import { useLanguage } from "../../context/LanguageContext";
 import styles from "./style.module.css";
+import { useLanguage } from "../../hooks/useLanguage";
 
 const LanguageSwitcher = () => {
   const { language, toggleLanguage } = useLanguage();
 
-  // подпись кнопки в зависимости от текущего языка
-  const nextLabel =
-    language === "en" ? "Переключить на русский" : "Switch to English";
+  const buttonLabel =
+    language === "en" ? "Switch language" : "Переключить язык";
 
   return (
     <button onClick={toggleLanguage} className={styles.switchBtn}>
-      {nextLabel}
+      {buttonLabel}
     </button>
   );
 };

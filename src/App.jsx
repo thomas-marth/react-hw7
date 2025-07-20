@@ -1,6 +1,6 @@
-import { LanguageProvider } from "./context/LanguageContext";
 import LanguageSwitcher from "./components/languageSwitcher";
 import TextDisplay from "./components/textDisplay";
+import { LanguageProvider } from "./contexts/LanguageContext.jsx";
 
 function App() {
   return (

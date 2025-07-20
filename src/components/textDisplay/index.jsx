@@ -1,7 +1,6 @@
 import styles from "./style.module.css";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../hooks/useLanguage";
 
-// набор переводов
 const translations = {
   en: {
     header: "English language was chosen",
