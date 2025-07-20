@@ -1,5 +1,6 @@
+import { useContext } from "react"; // 1. Импортируем useContext
+import LanguageContext from "../../contexts/LanguageContext";
 import styles from "./style.module.css";
-import { useLanguage } from "../../hooks/useLanguage";
 
 const translations = {
   en: {
@@ -11,7 +12,7 @@ const translations = {
 };
 
 const TextDisplay = () => {
-  const { language } = useLanguage();
+  const { language } = useContext(LanguageContext);
   const { header } = translations[language];
 
   return <h1 className={styles.heading}>{header}</h1>;
