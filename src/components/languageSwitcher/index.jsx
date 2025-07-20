@@ -1,8 +1,9 @@
+import { useContext } from "react";
+import LanguageContext from "../../contexts/LanguageContext";
 import styles from "./style.module.css";
-import { useLanguage } from "../../hooks/useLanguage";
 
 const LanguageSwitcher = () => {
-  const { language, toggleLanguage } = useLanguage();
+  const { language, toggleLanguage } = useContext(LanguageContext);
 
   const buttonLabel =
     language === "en" ? "Switch language" : "Переключить язык";
